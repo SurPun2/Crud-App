@@ -29,3 +29,5 @@ Sprint 2
 Sprint 3
 
 - [ ] Environment Variables
+- [ ] Refactor OpenApi
+- [ ] Terraform State (S3)
