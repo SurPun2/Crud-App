@@ -1,20 +1,4 @@
-# Node JS module files
-node_modules
-
-# Build Artifact folders
-.build
-build
-.dist
-dist
-*.zip
-
-# Environment files
-.env
-
 # Terraform
 .terraform 
 *.tfstate
 *.tfstate.backup
-
-# Git
-.git

@@ -1,24 +1,6 @@
 provider "aws" {
   region = "eu-west-2"
-  access_key = "my-access-key"
-  secret_key = "my-secret-key"
 }
-
-// ------------------- Lambda function in JS ------------------- //
-# resource "aws_lambda_function" "user_lambda" {
-#   function_name = "user_lambda"
-#   handler       = "index.handler"
-#   runtime       = "nodejs14.x"
-#   role          = aws_iam_role.lambda_exec.arn
-
-#   filename = "./lambda/get_lambda.zip"
-
-#   environment {
-#     variables = {
-#       DYNAMODB_TABLE = aws_dynamodb_table.user_table.name
-#     }
-#   }
-# }
 
 // ------------------- Lambda function in PY ------------------- //
 resource "aws_lambda_function" "user_lambda" {
